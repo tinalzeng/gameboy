@@ -4749,7 +4749,7 @@ p > video {
 		float: left;
 		margin: 0 0 0 30%;
 		padding: 0;
-		margin-left: 
+		margin-left:
 		width: 58.8235%;
 		position: relative;
 	}
@@ -6081,3 +6081,6 @@ p > video {
 	float: right;
 }
 
+.sortable {
+	list-style: none;
+}
