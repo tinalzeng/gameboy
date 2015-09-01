@@ -1564,6 +1564,8 @@ img.aligncenter {
 	border-top: 1px solid transparent;
 	border-bottom: 1px solid transparent;
 	display: block;
+	height: 305px;
+	overflow: scroll;
 }
 
 .widget-area {
@@ -6044,4 +6046,8 @@ p > video {
 
 a:hover .date, a:hover .points {
 	text-decoration: underline;
+}
+
+.sidebar ul {
+	padding-top: 10px;
 }
