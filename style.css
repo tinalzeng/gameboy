@@ -1316,7 +1316,6 @@ img.aligncenter {
 	font-family: "Courier", serif;
 	font-size: 17px;
 	font-size: 1.6rem;
-	font-weight: 700;
 	line-height: 1.2;
 	margin-bottom: 0;
 }
@@ -2768,7 +2767,7 @@ p > video {
 	}
 
 	.site-main {
-		padding: 5% 0;
+		padding: 5% 0 0;
 	}
 
 	.hentry.sticky:not(.has-post-thumbnail) {
@@ -2802,7 +2801,7 @@ p > video {
 
 	.entry-content,
 	.entry-summary {
-		padding: 0 9.0909% 9.0909%;
+		padding: 0 9.0909% 0%;
 	}
 
 	.entry-footer {
@@ -4089,6 +4088,7 @@ p > video {
 		position: relative;
 		width: 29.4118%;
 		padding-left: 10px;
+		height: 2000px;
 		overflow-y: scroll;
 	}
 
@@ -4101,7 +4101,7 @@ p > video {
 	}
 
 	.site-main {
-		padding: 5% 0;
+		padding: 5% 0 0;
 	}
 
 	.site-content {
@@ -4484,7 +4484,7 @@ p > video {
 
 	.entry-content,
 	.entry-summary {
-		padding: 0 10% 10%;
+		padding: 0 10% 0%;
 	}
 
 	.entry-content h1,
@@ -6018,16 +6018,22 @@ p > video {
 }
 
 #order_date {
-	color: #0000FF;
+	font-size: 1.2rem;
 }
 
 #order_points{
 	float:right;
+	font-size: 1.2rem;
 }
 
 .points{
 	text-align: left;
 	float: right;
+	font-size: 1.2rem;
+}
+
+.date{
+	font-size: 1.2rem;
 }
 
 .sortable {
