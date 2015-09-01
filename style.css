@@ -147,7 +147,7 @@ a:focus {
 a:hover{
 	color: #0000FF;
 }
-   
+
 a:active {
 	outline: 0;
 }
@@ -369,7 +369,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.6em 1.3333em;
+	margin: 0;
 }
 
 ul {
@@ -2825,7 +2825,7 @@ p > video {
 
 	.site-footer {
 		border-top: 0;
-		margin: 0 7.6923%;
+		margin: 0 1%;
 		padding: 3.84615% 7.6923%;
 	}
 
@@ -4064,7 +4064,6 @@ p > video {
 @media screen and (min-width: 59.6875em) {
 	body:before {
 		background-color: #fff;
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		content: "";
 		display: block;
 		height: 100%;
@@ -4072,7 +4071,7 @@ p > video {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 29.4118%;
+		width: 300px;
 		z-index: 0; /* Fixes flashing bug with scrolling on Safari */
 	}
 
@@ -4084,12 +4083,13 @@ p > video {
 	.sidebar {
 		float: left;
 		margin-right: -100%;
-		max-width: 413px;
+		max-width: 300px;
 		position: relative;
 		width: 29.4118%;
 		padding-left: 10px;
 		height: 2000px;
 		overflow-y: scroll;
+		border-right: solid 1px rgba(0, 0, 0, 0.15);
 	}
 
 	.secondary {
@@ -4101,7 +4101,7 @@ p > video {
 	}
 
 	.site-main {
-		padding: 5% 0 0;
+		padding: 0;
 	}
 
 	.site-content {
@@ -4338,7 +4338,7 @@ p > video {
 	.site-header {
 		background-color: transparent;
 		border-bottom: 0;
-		margin: 0% 0;
+		margin: 5% 0;
 		padding: 0 10%;
 	}
 
@@ -4710,7 +4710,7 @@ p > video {
 	}
 
 	.site-info {
-		padding: 5% 10%;
+		padding: 5% 7% 5% 2%;
 	}
 
 	embed,
@@ -6024,12 +6024,14 @@ p > video {
 #order_points{
 	float:right;
 	font-size: 1.2rem;
+	margin-right: 10%;
 }
 
 .points{
 	text-align: left;
 	float: right;
 	font-size: 1.2rem;
+	margin-right: 10%;
 }
 
 .date{
@@ -6038,4 +6040,8 @@ p > video {
 
 .sortable {
 	list-style: none;
+}
+
+a:hover .date, a:hover .points {
+	text-decoration: underline;
 }
