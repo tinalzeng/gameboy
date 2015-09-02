@@ -2448,7 +2448,6 @@ iframe,
 object,
 video {
 	margin-bottom: 1.6em;
-	max-width: 100%;
 	vertical-align: middle;
 }
 
@@ -2779,7 +2778,6 @@ p > video {
 	.hentry,
 	.page-header,
 	.page-content {
-		box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);
 		margin: 0 7.6923%;
 	}
 
@@ -4459,7 +4457,7 @@ p > video {
 	}
 
 	.hentry {
-		padding-top: 8.3333%;
+		padding-top: 0%;
 	}
 
 	.hentry + .hentry,
@@ -6051,3 +6049,4 @@ a:hover .date, a:hover .points {
 .sidebar ul {
 	padding-top: 10px;
 }
+
