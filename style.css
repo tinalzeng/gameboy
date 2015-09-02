@@ -1588,7 +1588,7 @@ img.aligncenter {
 
 .hentry {
 	background-color: #fff;
-	padding-top: 7.6923%;
+	padding-top: 0%;
 	position: relative;
 }
 
@@ -6047,6 +6047,10 @@ p > video {
 
 .sortable {
 	list-style: none;
+}
+
+a.current {
+  font-weight: bold;
 }
 
 
