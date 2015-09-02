@@ -2447,8 +2447,10 @@ embed,
 iframe,
 object,
 video {
-	margin-bottom: 1.6em;
-	vertical-align: middle;
+	/*margin-bottom: 1.6em;
+	max-width: 100%;
+	vertical-align: middle;*/
+	margin-bottom: 1.6471em;
 }
 
 p > embed,
@@ -4484,7 +4486,7 @@ p > video {
 
 	.entry-content,
 	.entry-summary {
-		padding: 0 10% 0%;
+		padding: 0 2% 0%;
 	}
 
 	.entry-content h1,
