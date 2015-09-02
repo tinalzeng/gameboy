@@ -49,7 +49,6 @@
 
 		</div><!-- .entry-content -->
 	</main><!-- .site-main -->
-	
 </div><!-- .content-area -->
 
 </article><!-- #post-## -->
