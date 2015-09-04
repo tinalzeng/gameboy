@@ -4110,10 +4110,6 @@ p > video {
 		padding: 0;
 	}
 
-	.home .site-main {
-		background-color: #3fa3ff;
-	}
-
 	.site-content {
 		display: block;
 		float: left;
@@ -6065,3 +6061,7 @@ a:hover .date, a:hover .points {
 	padding-top: 10px;
 }
 
+.single	.entry-content {
+	padding: 0 0 0;
+	margin-left: 15px;
+}
