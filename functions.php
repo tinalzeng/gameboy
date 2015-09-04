@@ -369,8 +369,9 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
-
 require get_template_directory() . '/inc/widget.php';
+
+require get_template_directory() . '/inc/options-twitch.php';
 
 // Add custom fields for posts
 function gameboy_custom_fields() {
