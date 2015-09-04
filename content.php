@@ -44,6 +44,15 @@
 		?>
 		<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
 		<iframe width="742" height="417" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+
+		<script>
+			( function( $ ) {
+				$( document ).ready(function() {
+					$("li.post-<?php echo $post->ID; ?>").addClass( 'active' );
+				});
+			})( jQuery );
+		</script>
+
 		<?php endif; ?>
 
 
