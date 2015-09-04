@@ -4110,6 +4110,10 @@ p > video {
 		padding: 0;
 	}
 
+	.home .site-main {
+		background-color: #3fa3ff;
+	}
+
 	.site-content {
 		display: block;
 		float: left;
