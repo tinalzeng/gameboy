@@ -6049,10 +6049,13 @@ p > video {
 	list-style: none;
 }
 
+<<<<<<< Updated upstream
 .active {
 	font-weight: bold;
 }
 
+=======
+>>>>>>> Stashed changes
 a:hover .date, a:hover .points {
 	text-decoration: underline;
 	font-weight: bold;

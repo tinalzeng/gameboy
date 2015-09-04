@@ -47,6 +47,7 @@ $( document ).ready(function() {
 			dateInverse = true;
 		}
 	});
+	
 });
 
 } )( jQuery );
