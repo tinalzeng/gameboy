@@ -25,10 +25,10 @@ $( document ).ready(function() {
 		});
 		if ( pointInverse ) {
 			pointInverse = false;
-			$('#order_points i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
 		} else {
 			pointInverse = true;
-			$('#order_points i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
 		}
 	});
 
@@ -48,7 +48,7 @@ $( document ).ready(function() {
 			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');		
 		} else {
 			dateInverse = true;
-			$('#order_date i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
 		}
 	});
 });
