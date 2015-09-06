@@ -2805,6 +2805,11 @@ p > video {
 		padding: 0 9.0909%;
 	}
 
+
+	.entry-content {
+		margin-left: 0px;
+	}
+
 	.entry-content,
 	.entry-summary {
 		padding: 0 9.0909% 0%;
@@ -4488,6 +4493,10 @@ p > video {
 		margin-bottom: 1.1613em;
 	}
 
+	.entry-content {
+		margin-left: 16px;
+	}
+
 	.entry-content,
 	.entry-summary {
 		padding: 0 10% 0%;
@@ -6063,5 +6072,8 @@ a:hover .date, a:hover .points {
 
 .single	.entry-content {
 	padding: 0 0 0;
-	margin-left: 15px;
+}
+
+.widget-area .fa {
+	margin-left: 10px;
 }
