@@ -6071,7 +6071,7 @@ a:hover .date, a:hover .points {
 }
 
 .single	.entry-content {
-	padding: 0 0 0;
+	padding-left: 15px;
 }
 
 .widget-area .fa {
