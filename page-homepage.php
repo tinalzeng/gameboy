@@ -19,38 +19,44 @@ get_header(); ?>
 			<div class="entry-content">
 
 		<?php
-			$posts = get_posts( array(
-				'posts_per_page'      => 1,
-				'post_type' 		  => 'post',
-				'suppress_filters'    => true,
-				'ignore_sticky_posts' => 1,
-			) );
 
+			//SHOW TWITCH
+			if (get_option('twitch_enable') != "true") :
 
-			foreach ( $posts as $post ) :
+				$posts = get_posts( array(
+					'posts_per_page'      => 1,
+					'post_type' 		  => 'post',
+					'suppress_filters'    => true,
+					'ignore_sticky_posts' => 1,
+				) );
 
-				$stats = get_post_meta( $post->ID, 'game_stats', true );
-				if ( ! empty ( $stats['youtube_id'] ) ):
-				?>
-				<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
+				foreach ( $posts as $post ) :
 
-				<div class="video wrapper">
-	<iframe width="742" height="417" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
-				</div>
+					$stats = get_post_meta( $post->ID, 'game_stats', true );
+					if ( ! empty ( $stats['youtube_id'] ) ): ?>
+						<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
 
-				<script>
-					( function( $ ) {
-						$( document ).ready(function() {
-							$("li.post-<?php echo $post->ID; ?>").addClass( 'active' );
-						});
-					})( jQuery );
-				</script>
+						<div class="video wrapper">
+							<iframe width="742" height="417" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+						</div>
 
+						<script>
+							( function( $ ) {
+								$( document ).ready(function() {
+									$("li.post-<?php echo $post->ID; ?>").addClass( 'active' );
+								});
+							})( jQuery );
+						</script>
 
-				<?php endif; ?>
+					<?php endif; ?>
 
-			<?php endforeach; ?>
+				<?php endforeach; ?>
 
+			<?php else : ?>
+
+				<iframe src="http://www.twitch.tv/drofrehturgnahc/" frameborder="0" scrolling="no" height="417" width="742"></iframe>
+
+			<?php endif; ?>
 
 			</div><!-- .entry-content -->
 		</main><!-- .site-main -->

@@ -1633,7 +1633,8 @@ a.post-thumbnail:focus {
 
 .entry-content,
 .entry-summary {
-	padding: 7.6923% 7.6923% 7.6923%;
+	padding: 0 7.6923% 7.6923%;
+	padding-top: 10px;
 }
 
 .entry-content > :last-child,
