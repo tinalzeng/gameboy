@@ -25,8 +25,10 @@ $( document ).ready(function() {
 		});
 		if ( pointInverse ) {
 			pointInverse = false;
+			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
 		} else {
 			pointInverse = true;
+			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
 		}
 	});
 
@@ -43,8 +45,10 @@ $( document ).ready(function() {
 		});
 		if ( dateInverse ) {
 			dateInverse = false;
+			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');		
 		} else {
 			dateInverse = true;
+			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
 		}
 	});
 });

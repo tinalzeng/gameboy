@@ -30,24 +30,33 @@ get_header(); ?>
 					'ignore_sticky_posts' => 1,
 				) );
 
-
 				foreach ( $posts as $post ) :
 
 					$stats = get_post_meta( $post->ID, 'game_stats', true );
-					if ( ! empty ( $stats['youtube_id'] ) ):
-					?>
-					<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
-					<iframe width="800" height="600" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+					if ( ! empty ( $stats['youtube_id'] ) ): ?>
+						<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
+
+						<div class="video wrapper">
+							<iframe width="742" height="417" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+						</div>
+
+						<script>
+							( function( $ ) {
+								$( document ).ready(function() {
+									$("li.post-<?php echo $post->ID; ?>").addClass( 'active' );
+								});
+							})( jQuery );
+						</script>
+
 					<?php endif; ?>
 
 				<?php endforeach; ?>
 
 			<?php else : ?>
 
-				<iframe src="http://www.twitch.tv/drofrehturgnahc/" frameborder="0" scrolling="no" height="600" width="800"></iframe>
+				<iframe src="http://www.twitch.tv/drofrehturgnahc/" frameborder="0" scrolling="no" height="417" width="742"></iframe>
 
 			<?php endif; ?>
-
 
 			</div><!-- .entry-content -->
 		</main><!-- .site-main -->

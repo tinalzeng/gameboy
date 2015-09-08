@@ -26,8 +26,11 @@
 		?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
+		<div class="entry-content">
+	<?php
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
 				__( 'Continue reading %s', 'gameboy' ),
@@ -40,10 +43,21 @@
 		if ( ! empty ( $stats['youtube_id'] ) ):
 		?>
 		<h2><?php echo get_the_date('Y-m-d H:m', $post->ID); ?></h2>
-		<iframe width="640px" height="360px" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+		<iframe width="742" height="417" src="https://www.youtube.com/embed/<?php echo $stats['youtube_id']; ?>" frameborder="0" allowfullscreen></iframe>
+
+		<script>
+			( function( $ ) {
+				$( document ).ready(function() {
+					$("li.post-<?php echo $post->ID; ?>").addClass( 'active' );
+				});
+			})( jQuery );
+		</script>
+
 		<?php endif; ?>
 
 
-	</div><!-- .entry-content -->
+		</div><!-- .entry-content -->
+	</main><!-- .site-main -->
+</div><!-- .content-area -->
 
 </article><!-- #post-## -->
