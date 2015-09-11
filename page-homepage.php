@@ -54,7 +54,7 @@ get_header(); ?>
 
 			<?php else : ?>
 
-				<iframe src="http://www.twitch.tv/drofrehturgnahc/" frameborder="0" scrolling="no" height="417" width="742"></iframe>
+				<iframe src="http://www.twitch.tv/drofrehturgnahc/embed" frameborder="0" scrolling="no" height="417" width="742"></iframe>
 
 			<?php endif; ?>
 
