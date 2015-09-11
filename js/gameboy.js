@@ -23,12 +23,16 @@ $( document ).ready(function() {
 			}
 			return output;
 		});
+
+		dateInverse = true;	
+		$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
+			
 		if ( pointInverse ) {
-			pointInverse = false;
-			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
+			pointInverse = false;	
+			$('#order_date i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');					
 		} else {
 			pointInverse = true;
-			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');	
+			$('#order_points i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');	
 		}
 	});
 
@@ -43,12 +47,16 @@ $( document ).ready(function() {
 			}
 			return output;
 		});
+
+		pointInverse = true;	
+		$('#order_points i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+
 		if ( dateInverse ) {
-			dateInverse = false;
-			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');		
+			dateInverse = false;	
+			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
 		} else {
 			dateInverse = true;
-			$('#order_date i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
+			$('#order_date i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');		
 		}
 	});
 });
