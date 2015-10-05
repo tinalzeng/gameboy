@@ -25,11 +25,12 @@ $( document ).ready(function() {
 		});
 
 		dateInverse = true;	
-		$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');
-			
+		$('#order_date i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');
+
 		if ( pointInverse ) {
 			pointInverse = false;	
-			$('#order_date i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');					
+			dateInverse = true;	
+			$('#order_points i.fa').addClass('fa-angle-up').removeClass('fa-angle-down');					
 		} else {
 			pointInverse = true;
 			$('#order_points i.fa').addClass('fa-angle-down').removeClass('fa-angle-up');	
