@@ -250,15 +250,17 @@ function gameboy_scripts() {
 		wp_enqueue_script( 'gameboy-keyboard-image-navigation', get_template_directory_uri() . '/js/keyboard-image-navigation.js', array( 'jquery' ), '20141010' );
 	}
 
-	wp_enqueue_script( 'gameboy-jquery-sort', get_template_directory_uri() . '/js/jquery-sort.js', array( 'jquery' ), '20141010' );
-
-	wp_enqueue_script( 'gameboy-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20150330', true );
+	wp_enqueue_script( 'gameboy-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '20151005', true );
 	wp_localize_script( 'gameboy-script', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'gameboy' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'gameboy' ) . '</span>',
 	) );
+	
+	wp_enqueue_script( 'gameboy-jquery-sort', get_template_directory_uri() . '/js/jquery-sort.js', array( 'jquery' ), '20151005' );
 
-	wp_enqueue_script( 'gameboy-scripts', get_template_directory_uri() . '/js/gameboy.js', array( 'gameboy-jquery-sort' ), '20141010' );
+	wp_enqueue_script( 'js-cookie', get_template_directory_uri() . '/js/js.cookie.js', array( 'jquery' ), '20151005' );
+
+	wp_enqueue_script( 'gameboy-scripts', get_template_directory_uri() . '/js/gameboy.js', array( 'gameboy-jquery-sort', 'js-cookie' ), '20151005' );
 
 }
 add_action( 'wp_enqueue_scripts', 'gameboy_scripts' );

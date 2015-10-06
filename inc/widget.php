@@ -29,7 +29,7 @@ class Gameboy_Widget extends WP_Widget {
 		endif; ?>
 
 		<a id="order_date" href="#">Date<i class="fa fa-angle-up"></i></a>
-		<a id="order_points" href="#">Points<i class="fa fa-angle-up"></i></a>
+		<a id="order_points" href="#">Points<i class="fa fa-angle-down"></i></a>
 		<ul>
 		<?php foreach ( $posts_array as $post ) : ?>
 			<li class="sortable post-<?php echo $post['id']; ?>" points="<?php echo $post['points']; ?>" date="<?php echo $post['date']; ?>"><a href="<?php echo get_permalink( $post['id'] );?>"><span class="date"><?php echo $post['date_formated']; ?></span> <span class="points"><?php echo number_format( $post['points'] ); ?></span></a></li>
