@@ -6078,3 +6078,7 @@ a:hover .date, a:hover .points {
 .widget-area .fa {
 	margin-left: 10px;
 }
+
+.video {
+	display: none;
+}
