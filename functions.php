@@ -260,7 +260,7 @@ function gameboy_scripts() {
 
 	wp_enqueue_script( 'js-cookie', get_template_directory_uri() . '/js/js.cookie.js', array( 'jquery' ), '20151005' );
 
-	wp_enqueue_script( 'gameboy-scripts', get_template_directory_uri() . '/js/gameboy.js', array( 'gameboy-jquery-sort', 'js-cookie' ), '20151005' );
+	wp_enqueue_script( 'gameboy-scripts', get_template_directory_uri() . '/js/gameboy.js', array( 'gameboy-jquery-sort', 'js-cookie' ), '20151009' );
 
 }
 add_action( 'wp_enqueue_scripts', 'gameboy_scripts' );

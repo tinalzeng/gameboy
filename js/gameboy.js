@@ -6,6 +6,9 @@ Sort the date / points colums on click
 
 $( document ).ready(function() {
 
+	//show the video after the page loads
+	$('.video').show();
+
 	var datebtn = $('#order_date'),
 	pointsbtn = $('#order_points'),
 	li = $('li.sortable'),
