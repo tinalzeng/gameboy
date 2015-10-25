@@ -28,6 +28,8 @@ get_header(); ?>
 					'post_type' 		  => 'post',
 					'suppress_filters'    => true,
 					'ignore_sticky_posts' => 1,
+					'meta_key'            => 'game_stats',
+					'orderby'			  => 'meta_value',
 				) );
 
 				foreach ( $posts as $post ) :
